@@ -2,11 +2,12 @@
 //  AppDelegate.m
 //  LiveStreamingDemo
 //
-//  Created by 马英 on 16/11/21.
+//  Created by reborn on 16/11/21.
 //  Copyright © 2016年 reborn. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+
+    self.window.rootViewController = [[ViewController alloc] init];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

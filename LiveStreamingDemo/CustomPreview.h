@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  CustomPreview.h
 //  LiveStreamingDemo
 //
 //  Created by reborn on 16/11/21.
@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
+@interface CustomPreview : UIView
 
 @end
-
